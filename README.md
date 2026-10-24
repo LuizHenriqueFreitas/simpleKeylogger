@@ -24,6 +24,14 @@ software, e tenha essa terminologia, o windows possívelmente vai deixar o spayw
 Keyloggers mais avançados conseguem enviar periodicamente os arquivos de log, que são gerados   
 conforme o uso do sistema pelos seus usuários.
 
+> #### SOBRE O ENVIO DE EMAILS
+> 
+> Quando há o envio de emails com os dados nesse tipo de malware, o hacker usa um email "laranja",   
+> criado somente para essa finalidade, esse email deve ser inserido, assim como sua senha, no script   
+> de controle do envio de dados. 
+> 
+> O email de destino também bom que seja um email "laranja".
+
 
 ---
 
